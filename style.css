@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-pr);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+:root {
+    --bg-ac: rgb(128, 159, 176);
+    --bg-pr: rgb(217, 217, 217);
+}
+
+/* ANCHOR HEADER SECTION ‼️‼️‼️ */
+
+.menubutton {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    right: 0rem;
+    top: 1.6rem;
+}
+
+.menubuttonbar {
+    width: 100%;
+    height: .2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* TODO STICKY CONTAINER FOR NAV */
+.navbarcontainer {}
+
+.navbar {
+    background-color: var(--bg-ac);
+    position: relative;
+    min-height: 12vh;
+}
+
+.navbartitle h2 {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 2rem;
+}
+
+.navbarlinks {
+    display: flex;
+}
+
+.navbarlinks ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navbarlinks ul li {
+    display: flex;
+}
+
+.navbarlinks ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .navbarlinks {
+        display: none;
+    }
+
+    .menubutton {
+        display: flex;
+    }
+}
+
+/* ANCHOR HERO-MAIN SECTION ‼️‼️‼️ */
+
+.hero-section-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.form-container {
+    background-color: white;
+    height: 100%;
+    position: relative;
+}
+
+.form-getintouch-title {
+    font-family: 'Oswald';
+    position: absolute;
+    top: -2rem;
+    font-size: 1rem;
+}
+
+.form-getintouch {
+    padding: 1rem;
+    top: 2rem;
+}
+
+.form-getintouch p {
+    font-family: 'Ubuntu';
+}
+
+textarea {
+    resize: none;
+}
+
+.imgbanner-container {
+    background-image: url('https://images.unsplash.com/photo-1504220072531-9aef18d43e02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.imgbanner-title {
+    font-family: 'DM Sans';
+    font-size: 3.5rem;
+    position: relative;
+    text-shadow: 1px 1px 10px black;
+    top: 4rem;
+    opacity: 0;
+    transition: opacity ease-in 2s;
+}
+
+.imgbanner-title.active {
+    opacity: 1;
+}
+
+.applynow-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .form-col {
+        background-image: url('https://images.unsplash.com/photo-1504220072531-9aef18d43e02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+        min-height: 61vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .imgbanner-container {
+        display: none;
+    }
+
+    .imgbanner-title {
+        display: none;
+    }
+
+    .form-getintouch-title {
+        font-family: 'Oswald';
+        position: absolute;
+        top: -6rem;
+        font-size: 1.5rem;
+        left: -0rem;
+    }
+}
+
+/* ANCHOR INFOG SECTIONS */
+
+.infog-container-0 {
+    padding: 3rem;
+}
+
+.infog-title-0 {
+    font-family: 'DM Sans';
+}
+
+.infog-text-0 {
+    font-family: 'Oswald';
+}
+
+.infog-text-1 {
+    font-family: 'DM Sans';
+}
+
+.ico {
+    font-size: 2rem;
+}
+
+.ico-text {
+    font-family: 'Oswald';
+}
+
+.infog-container-1 {
+    scale: initial;
+    transition: scale ease-in-out .3s;
+    position: absolute;
+    right: 8rem;
+    width: 80%;
+}
+
+.infog-container-1:hover {
+    scale: 1.02;
+}
+
+@media (max-width: 768px) {
+    .infog-container-1 {
+        position: relative;
+        right: 0rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .infog-container-0 {
+        padding: 1.5rem;
+    }
+
+    .infog-title-0 {
+        font-size: 1.2rem;
+    }
+
+    .infog-text-0 {
+        font-size: 1rem;
+    }
+
+    .infog-text-1 {
+        font-size: 1rem;
+    }
+}
