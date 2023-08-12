@@ -162,7 +162,7 @@ textarea {
     }
 }
 
-/* ANCHOR INFOG SECTIONS */
+/* ANCHOR TOP SECTIONS */
 
 .infog-container-0 {
     padding: 3rem;
@@ -289,6 +289,30 @@ textarea {
 
 /* ANCHOR TESTIMONIALS */
 
+.review-container-0 {
+    transition: scale ease-in-out .3s;
+}
+
+.review-container-0:hover {
+    scale: 1.1;
+}
+
+.review-container-1 {
+    transition: scale ease-in-out .3s;
+}
+
+.review-container-1:hover {
+    scale: 1.1;
+}
+
+.review-container-2 {
+    transition: scale ease-in-out .3s;
+}
+
+.review-container-2:hover {
+    scale: 1.1;
+}
+
 .star-ico-container {
     font-size: 3rem;
 }
@@ -303,4 +327,8 @@ textarea {
 
 .reviews {
     font-family: 'DM Sans';
+}
+
+.review-name {
+    font-family: 'Ubuntu';
 }
