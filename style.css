@@ -16,13 +16,11 @@ body {
 /* ANCHOR HEADER SECTION ‼️‼️‼️ */
 
 .menubutton {
-    position: absolute;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    right: 0rem;
 }
 
 .menubuttonbar {
@@ -33,12 +31,9 @@ body {
 }
 
 /* TODO STICKY CONTAINER FOR NAV */
-.navbarcontainer {}
 
 .navbar {
     background-color: var(--bg-ac);
-    /* position: relative; */
-    min-height: 15vh;
 }
 
 .navbartitle h2 {
@@ -67,13 +62,18 @@ body {
 }
 
 @media (max-width: 576px) {
+
     .navbarlinks {
         display: none;
     }
 
+    .navbarlinks.active {
+        display: flex;
+    }
+
     .navbarlinks ul {
         display: flex;
-        flex-direction: column;
+        font-size: .6rem;
     }
 
     .menubutton {
@@ -83,10 +83,10 @@ body {
 
 /* ANCHOR HERO-MAIN SECTION ‼️‼️‼️ */
 
-.hero-section-container {
+/* .hero-section-container {
     overflow-y: scroll;
     overflow-x: hidden;
-}
+} */
 
 .form-container {
     background-color: white;
@@ -363,5 +363,33 @@ textarea {
     .program-title {
         font-size: 1.5rem;
         text-align: center;
+    }
+}
+
+/* ANCHOR JS TARGETS */
+
+#apply-now {
+    transition: rotate ease-in 1.25s;
+}
+
+#apply-now.expand {
+    margin-top: 2rem;
+    rotate: 360deg;
+    scale: 1.75;
+}
+
+/* ANCHOR FOOTER */
+
+.footer-text-container {
+    font-family: 'DM Sans';
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+
+@media (max-width: 768px) {
+    .footer-text-container {
+        flex-direction: column;
     }
 }
