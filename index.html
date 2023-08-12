@@ -5,7 +5,7 @@
     <script src="./load-animations.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VC WELD</title>
+    <title>Checkpoint #1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,600&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,600&family=Teko&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Teko&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -29,7 +29,7 @@
     <div class="navbarcontainer">
         <nav class="navbar shadow bg-danger">
             <div class="navbartitle ps-4 pt-2">
-                <h2>VC WELD</h2>
+                <h2><i class="mdi mdi-tools"></i> B2 WELDING</h2>
             </div>
             <!-- NOTE SANDWICH MENU -->
             <a href="#" class="menubutton me-4">
@@ -50,7 +50,6 @@
     </div>
 </header>
 <!-- ANCHOR BODY -->
-<!-- NOTE SIDE MARGINS ARE 5 -->
 
 <body>
     <main>
@@ -73,7 +72,12 @@
                                 placeholder="Your phone number.">
                             <textarea name="Message" id="messageForm" cols="50" rows="4"
                                 class="form-control my-1 shadow-sm" placeholder="Leave us a message."></textarea>
-                            <button class="btn btn-danger my-2 shadow-sm px-4">SUBMIT <i
+                            <label for="terms-checkbox" class="form-check-label my-2">By clicking "Submit" you agree
+                                with
+                                our
+                                <a href="#">Terms of Service</a></label>
+                            <!-- <input type="checkbox" name="terms-checkbox" id="terms-checkbox" class="form-check-input"> -->
+                            <button class="btn btn-danger my-0 shadow-sm px-4">SUBMIT <i
                                     class="mdi mdi-email"></i></button>
                         </form>
                     </div>
@@ -98,13 +102,16 @@
                 <!-- NOTE WHY CHOOSE US -->
                 <div class="col12 col-md-6 bg-danger order-2 order-md-1 p-0 m-0">
                     <div class="infog-container-0 d-flex flex-column">
-                        <h2 class="text-light infog-title-0">What sets us apart from the rest? <i
-                                class="mdi mdi-arrow-left-bold"></i></h2>
+                        <h2 class="text-light infog-title-0">What sets us <span class="text-dark">apart</span> from the
+                            <span class="text-dark">rest?</span> <i class="mdi mdi-arrow-left-bold"></i>
+                        </h2>
                         <h4 class="text-light infog-text-0"><i class="mdi mdi-arrow-right-bold"></i> Upon graduation our
                             student's starting salaries are between
-                            $90,000 and
-                            $100,000.</h4>
-                        <h6 class="text-light infog-text-1">Our competitor's alumni can't clear half of that!</h6>
+                            <span class="text-dark">$90,000</span> and
+                            <span class="text-dark">$100,000</span>.
+                        </h4>
+                        <h6 class="text-light infog-text-1">Our competitor's alumni <span class="text-dark">can't</span>
+                            clear <span class="text-dark">half</span> of that!</h6>
                     </div>
                 </div>
                 <!-- NOTE INFOGRAPHICS -->
@@ -123,13 +130,42 @@
                             <div class="col-2 ico text-danger"><i class="mdi mdi-pencil"></i></div>
                             <div class="col-10 d-flex flex-column justify-content-center ico-text">Our instructors have
                                 been
-                                welding for 50+ yeas.</div>
+                                welding for 50+ years.</div>
                             <div class="col-2 ico text-danger"><i class="mdi mdi-cash-100"></i></div>
                             <div class="col-10 d-flex flex-column justify-content-center ico-text">Multiple
                                 opportunities to make
                                 money while you learn.
                             </div>
                         </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ANCHOR MIDDLE SECTION -->
+        <div class="mid-section-container container-fluid p-0 mt-5">
+            <!-- NOTE MAIN ROW -->
+            <section class="row mid-section p-0 m-0">
+                <!-- NOTE PICTURE COL -->
+                <div class="col-12 col-md-5 p-5 m-0">
+                    <div class="img-container shadow rounded"></div>
+                </div>
+                <!-- NOTE TEXT CONTAINER -->
+                <div class="col-12 col-md-7 p-5">
+                    <div class="text-container position-relative">
+                        <h2 class="mid-text-title"><span class="text-danger">Forget</span> going to <span
+                                class="text-danger">college</span>.<i class="mdi mdi-arrow-left-bold"></i></h2>
+                        <h4 class="mid-text-title-1"><i class="mdi mdi-arrow-right-bold"></i> Our
+                            tuition rate is far <span class="text-danger">CHEAPER</span> than other
+                            Trade Schools.</h4>
+                        <h4 class="mid-text mt-3">We can't think of anything better to write. <span
+                                class="text-danger">But
+                                we can think of something that will make you happy</span>. Our
+                            highest tuition rate is <span class="text-danger">$99 a month</span>! Go check it out.
+                            <div class="tuition-button-container d-flex justify-content-end">
+                                <button class="btn btn-danger tuition-button py-3 px-5 shadow"><i
+                                        class="mdi mdi-arrow-right-bold"></i> SEE TUITION PLANS</button>
+                            </div>
+                        </h4>
                     </div>
                 </div>
             </section>
