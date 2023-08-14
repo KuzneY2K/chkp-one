@@ -1,1 +1,1 @@
-##Weld School Website 🔥🛠️##
+Weld School Website 🔥🛠️
